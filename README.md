@@ -1,7 +1,7 @@
 # Fantasy Football Momentum Calculator and Player Analyzer
 With Docker installed, build an image using the supplied DockerFile
 
-In command line, run the code 
+In your terminal, run the code:
 
 `docker build -t <image name> .`
 
