@@ -594,7 +594,7 @@ if __name__ == '__main__':
         figure = q.plot_cluster(df_new)
         st.plotly_chart(figure)
     else:
-        WEEK_OF_THE_SEASON = st.number_input("Current Week Number", value=3, placeholder=3,step=1)
+        WEEK_OF_THE_SEASON = st.selectbox("Current Week Number", sorted(list(weekly_stats.week.unique())), index=max(weekly_stats.week)-1)
         st.write('The current week Number is ', WEEK_OF_THE_SEASON)
 
         
